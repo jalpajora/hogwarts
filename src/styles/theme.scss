@@ -1,0 +1,70 @@
+
+.hogwarts {
+  background: #424242;
+}
+
+.hogwarts--slytherin,
+.hogwarts--hufflepuff,
+.hogwarts--gryffindor,
+.hogwarts--ravenclaw {
+  color: #000;
+}
+
+.hogwarts--gryffindor,
+.hogwarts--ravenclaw {
+  .menu {
+    color: #fff;
+  }
+}
+
+.hogwarts--slytherin {
+  .sorting-hat__img-fill {
+    fill: #0d6217;
+  }
+
+  .menu {
+    background: $slytherin;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.hogwarts--gryffindor {
+  .sorting-hat__img-fill {
+    fill: #7f0909;
+  }
+
+  .menu {
+    background: $gryffindor;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.hogwarts--hufflepuff {
+  .sorting-hat__img-fill {
+    fill: #eee117;
+  }
+
+  .menu {
+    background: $hufflepuff;
+  }
+}
+
+.hogwarts--ravenclaw {
+  .sorting-hat__img-fill {
+    fill: #000a90;
+  }
+
+  .menu {
+    background: $ravenclaw;
+
+    a {
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+$slytherin: #0d6217;
+$gryffindor: #7f0909;
+$hufflepuff: #eee117;
+$ravenclaw: #000a90;
+
+@import './settings/viewport.scss';
+@import './theme';
+@import './components/button';
+@import './components/header';
+@import './components/sorting-hat';
+@import './components/table';
+@import './components/welcome';
+@import './components/content';
+
+body {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+}

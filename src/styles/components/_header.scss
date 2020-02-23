@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+}
+
+.logo {
+  align-items: center;
+  background: #000;
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  flex-basis: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+
+  li {
+    padding-right: 1rem;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
