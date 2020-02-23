@@ -2,7 +2,6 @@
   "name": "hogwarts",
   "version": "1.0.0",
   "description": "simple react project",
-  "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config=./config/webpack.dev",
     "build": "webpack --config=./config/webpack.prod"

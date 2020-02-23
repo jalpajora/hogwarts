@@ -1,5 +1,5 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const WebpackAssetsManifest = require('webpack-assets-manifest');
+// const WebpackAssetsManifest = require('webpack-assets-manifest');
 const HTMLWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path')
@@ -11,7 +11,7 @@ module.exports = {
   output: {
     filename: '[name].[hash].js',
     path: path.resolve('./dist'),
-    publicPath: '/',
+    publicPath: '/dist',
   },
   resolve: {
     extensions: ['.jsx', '.js'],
@@ -52,20 +52,20 @@ module.exports = {
     ],
   },
   plugins: [
-    new WebpackAssetsManifest({
-      publicPath: true,
-      output: '../asset-manifest.json',
-    }),
+    // new WebpackAssetsManifest({
+    //   publicPath: true,
+    //   output: '../asset-manifest.json',
+    // }),
     new HTMLWebPackPlugin({
-      template: 'index.html',
+      template: 'template.html',
       favicon: path.resolve('./src/styles/images') + '/favicon.png',
     }),
     new MiniCssExtractPlugin({ filename: '[name].[hash].css'}),
     new CleanWebpackPlugin(),
   ],
-  devServer: {
-    host: 'localhost',
-    port: 3000,
-    open: true,
-  },
+  // devServer: {
+  //   host: 'localhost',
+  //   port: 3000,
+  //   open: true,
+  // },
 };
