@@ -24,7 +24,7 @@ class App extends Component {
 
   linkToSortedHouseBtn(house) {
     return (
-      <Link to={`/houses/${house}`}>
+      <Link to={`/hogwarts/houses/${house}`}>
         <button className="button">{`Explore ${house} now!`}</button>
       </Link>
     )
@@ -35,34 +35,34 @@ class App extends Component {
       <Router>
         <div className="header">
           <div className="logo">
-            <Link to="/">
+            <Link to="/hogwarts">
               <img src={LogoImg} width="90px" height="30px" alt="Hogwarts" />
             </Link>
           </div>
           <ul className="menu">
               <li>
-                <Link to={`/houses/${house}`}>{house && house}</Link>
+                <Link to={`/hogwarts/houses/${house}`}>{house && house}</Link>
               </li>
               <li>
-                <Link to="/houses">Houses</Link>
+                <Link to="/hogwarts/houses">Houses</Link>
               </li>
               <li>
-                <Link to="/spells">Spells</Link>
+                <Link to="/hogwarts/spells">Spells</Link>
               </li>
             </ul>
         </div>
         <div className="content">
           <Switch>
-              <Route exact path="/houses">
+              <Route exact path="/hogwarts/houses">
                 <Houses />
               </Route>
-              <Route exact path={`/houses/${house}`}>
+              <Route exact path={`/hogwarts/houses/${house}`}>
                 <House house={house} />
               </Route>
-              <Route path="/spells">
+              <Route path="/hogwarts/spells">
                 <Spells />
               </Route>
-              <Route exact path="/">
+              <Route exact path="/hogwarts">
                 <SortingHat
                   onJoin={this.handleSortingHat}
                   linkToSortedHouseBtn={this.linkToSortedHouseBtn}

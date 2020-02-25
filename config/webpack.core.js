@@ -10,8 +10,8 @@ module.exports = {
   },
   output: {
     filename: '[name].[hash].js',
-    path: path.resolve('./dist'),
-    publicPath: '/dist',
+    path: path.resolve('./hogwarts/public'),
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.jsx', '.js'],
@@ -57,7 +57,7 @@ module.exports = {
     //   output: '../asset-manifest.json',
     // }),
     new HTMLWebPackPlugin({
-      template: 'template.html',
+      template: 'index.html',
       favicon: path.resolve('./src/styles/images') + '/favicon.png',
     }),
     new MiniCssExtractPlugin({ filename: '[name].[hash].css'}),
