@@ -10,7 +10,7 @@ module.exports = {
   },
   output: {
     filename: '[name].[hash].js',
-    path: path.resolve('./hogwarts/public'),
+    path: path.resolve('./build'),
     publicPath: '/',
   },
   resolve: {

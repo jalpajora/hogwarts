@@ -6,7 +6,7 @@ module.exports = merge(core, {
   mode: 'production',
   output: {
     filename: '[name].[hash].js',
-    path: path.resolve('./hogwarts/public'),
-    publicPath: '/hogwarts/public',
+    path: path.resolve('./build'),
+    publicPath: '/hogwarts/public/',
   },
 })
